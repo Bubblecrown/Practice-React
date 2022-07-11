@@ -3,16 +3,15 @@ import React, { useState } from "react";
 export default () => {
   const testAnd = false;
   let numBox = 0;
+  const [count, setCount] = useState(0);
+
   return (
     <div>
-      <div>Emmet pass</div>
-      <div>{numBox}</div>
-      {testAnd ? <div>yes</div> : <div>no</div>}
-      <div>{testAnd && "Yes and"}</div>
+      <h1>Count : {count} </h1>
       <button
         onClick={() => {
-          numBox = 10;
-        }}
+					setCount(count + 1)
+			}}
       >
         Change
       </button>
