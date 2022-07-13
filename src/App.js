@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import HelloComponent from "./components/HelloComponent";
 import "./components/styleComponents/style.css";
 export default () => {
   let numBox = 0;
@@ -7,7 +8,7 @@ export default () => {
   return (
     <div>
       <div className="container">
-        <img src="/logo512.png" alt="" />
+        <HelloComponent img="/logo512.png" />
         <h1>Count : {count} </h1>
         <button
           onClick={() => {
