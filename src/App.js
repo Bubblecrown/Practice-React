@@ -8,8 +8,7 @@ export default () => {
   return (
     <div>
       <div className="container">
-        <HelloComponent img="/logo512.png" />
-        <h1>Count : {count} </h1>
+        <HelloComponent img="/logo512.png" count={count} />
         <button
           onClick={() => {
             setCount(count + 1);
