@@ -1,20 +1,11 @@
-import React, { useState } from "react";
-import HelloComponent from "./components/HelloComponent";
+import React from "react";
 import "./components/styleComponents/style.css";
+import UseState from "./components/UseState";
 export default () => {
-  const [count, setCount] = useState(0);
-
   return (
     <div>
       <div className="container">
-        <HelloComponent img="/logo512.png" count={count} />
-        <button
-          onClick={() => {
-            setCount(count + 1);
-          }}
-        >
-          Change
-        </button>
+        <UseState />
       </div>
     </div>
   );
