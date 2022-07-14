@@ -1,11 +1,12 @@
 import React from "react";
+import FromComponent from "./components/FromComponent";
 import "./components/styleComponents/style.css";
-import UseState from "./components/UseState";
+import CountComponent from "./components/CountComponent";
 export default () => {
   return (
     <div>
       <div className="container">
-        <UseState />
+        <FromComponent />
       </div>
     </div>
   );

@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import HelloComponent from "./HelloComponent";
 
-export default function UseState() {
+export default function CountComponent() {
   const [count, setCount] = useState(0);
 
   return (
