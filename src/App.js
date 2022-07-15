@@ -3,16 +3,14 @@ import "./components/styleComponents/style.css";
 import FromComponent from "./components/FromComponent";
 import CountComponent from "./components/CountComponent";
 import UseEffect from "./components/UseEffect";
+import UseEffectInterval from "./components/UseEffectInterval";
 
 export default () => {
-  const [isShow, setIsshow] = useState(true);
 
   return (
     <div>
       <div className="container">
-        {isShow && <UseEffect />}
-
-        <button onClick={() => setIsshow(false)}>Delete</button>
+        <UseEffectInterval />
       </div>
     </div>
   );
