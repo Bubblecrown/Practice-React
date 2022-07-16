@@ -6,7 +6,7 @@ import UseContextChild from "./UseContextChild";
 // ตัวแม่ provide context
 export default function UseContext() {
   let [color, setColor] = useState({ box: "" });
-  let check = false;
+  // let check = [false];
   return (
     <div>
       <input
@@ -15,15 +15,18 @@ export default function UseContext() {
           setColor({ box: e.target.value }, console.log(color.box));
         }}
       />
-      <button
+      {/* <button
         onClick={() => {
-          check = true;
+          check[0] == true ? (check[0] = false) : (check[0] = true);
+          console.log(check[0]);
         }}
       >
         Show
-      </button>
-      <h1>{JSON.stringify(color.box)}</h1>
-      <ThemeContext.Provider value={color.box}>
+      </button> */}
+      <h1>#Debug: {JSON.stringify(color.box)}</h1>
+      <ThemeContext.Provider
+        value={color.box}
+      >
         <UseContextChild />
       </ThemeContext.Provider>
     </div>
