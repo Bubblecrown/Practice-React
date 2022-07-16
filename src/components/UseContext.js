@@ -7,7 +7,7 @@ import UseContextChild from "./UseContextChild";
 export default function UseContext() {
   return (
     <div>
-      <ThemeContext.Provider value={red}>
+      <ThemeContext.Provider value={"red"}>
         <UseContextChild />
       </ThemeContext.Provider>
     </div>

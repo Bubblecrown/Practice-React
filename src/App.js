@@ -5,13 +5,14 @@ import CountComponent from "./components/CountComponent";
 import UseEffect from "./components/UseEffect";
 import UseEffectInterval from "./components/UseEffectInterval";
 import UseEffectFeedJson from "./components/UseEffectFeedJson";
+import UseContext from "./components/UseContext";
 
 export default () => {
 
   return (
     <div>
       <div className="container">
-        <UseEffectFeedJson />
+        <UseContext />
       </div>
     </div>
   );
