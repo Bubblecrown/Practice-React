@@ -1,7 +1,14 @@
-import React, {useState, useEffect} from 'react'
-import axios from 'axios'
+import React, { useState, useEffect } from "react";
+import axios from "axios";
 export default function UseEffectFeedJson() {
-  return (
-    <div>UseEffectFeedJson</div>
-  )
+  const [dataArray, setDataArray] = useState(null);
+  useEffect(() => {
+    axios.get("https://jsonplaceholder.typicode.com/posts").then((result) => {
+      const { data } = result;
+      console.log(result.data);
+      // alert(JSON.stringify(result.data));
+    });
+  }, []);
+
+  return <div>UseEffectFeedJson</div>;
 }

@@ -4,13 +4,14 @@ import FromComponent from "./components/FromComponent";
 import CountComponent from "./components/CountComponent";
 import UseEffect from "./components/UseEffect";
 import UseEffectInterval from "./components/UseEffectInterval";
+import UseEffectFeedJson from "./components/UseEffectFeedJson";
 
 export default () => {
 
   return (
     <div>
       <div className="container">
-        <UseEffectInterval />
+        <UseEffectFeedJson />
       </div>
     </div>
   );
