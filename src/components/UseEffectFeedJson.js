@@ -7,8 +7,9 @@ export default function UseEffectFeedJson() {
       const { data } = result;
       console.log(result.data);
       // alert(JSON.stringify(result.data));
+			setDataArray(data)
     });
   }, []);
 
-  return <div>UseEffectFeedJson</div>;
+  return (<div><p>#debug {JSON.stringify(dataArray)}</p></div>);
 }
