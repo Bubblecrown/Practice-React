@@ -6,13 +6,15 @@ import UseEffect from "./components/UseEffect";
 import UseEffectInterval from "./components/UseEffectInterval";
 import UseEffectFeedJson from "./components/UseEffectFeedJson";
 import UseContext from "./components/UseContext";
+import UseMemo from "./components/UseMemo";
 
 export default () => {
 
   return (
     <div>
       <div className="container">
-        <UseContext />
+        {/* <UseContext /> */}
+        <UseMemo />
       </div>
     </div>
   );
