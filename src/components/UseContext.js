@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import ThemeContext from "./ThemeContext";
 import UseContextChild from "./UseContextChild";
 // ส่งจากแม่มายังลูกโดยไม่ผ่าน prop
-// อยากให้ตัวลุกทุกตัวเข้าถึงตัวแปรของตัวแม่ได้เลย
+// อยากให้ตัวลูกทุกตัวเข้าถึงตัวแปรของตัวแม่ได้เลย
 // ตัวแม่ provide context
 export default function UseContext() {
   let [color, setColor] = useState({ box: "" });
@@ -24,9 +24,7 @@ export default function UseContext() {
         Show
       </button> */}
       <h1>#Debug: {JSON.stringify(color.box)}</h1>
-      <ThemeContext.Provider
-        value={color.box}
-      >
+      <ThemeContext.Provider value={color.box}>
         <UseContextChild />
       </ThemeContext.Provider>
     </div>
