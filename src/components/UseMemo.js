@@ -1,7 +1,10 @@
 import React, { useState, useMemo } from "react";
 
+<<<<<<< HEAD
 // จดจำค่าเก่า ไม่ต้องคำนวณใหม่ ตราบใดที่ค่าที่ input เข้ามาเป็นค่าเดิม 
 // return ค่าที่ได้จากการคำนวณในฟังก์ชั่น
+=======
+>>>>>>> e834643135b6bccb08db1fadecf17bd08fc45fe0
 export default function UseMemo() {
   const [count, setCount] = useState(0);
   return (

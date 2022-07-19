@@ -7,7 +7,10 @@ import UseEffectInterval from "./components/UseEffectInterval";
 import UseEffectFeedJson from "./components/UseEffectFeedJson";
 import UseContext from "./components/UseContext";
 import UseMemo from "./components/UseMemo";
+<<<<<<< HEAD
 import UseCallBack from "./components/UseCallBack";
+=======
+>>>>>>> e834643135b6bccb08db1fadecf17bd08fc45fe0
 
 export default () => {
 
@@ -15,8 +18,12 @@ export default () => {
     <div>
       <div className="container">
         {/* <UseContext /> */}
+<<<<<<< HEAD
         {/* <UseMemo /> */}
         <UseCallBack />
+=======
+        <UseMemo />
+>>>>>>> e834643135b6bccb08db1fadecf17bd08fc45fe0
       </div>
     </div>
   );
