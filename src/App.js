@@ -1,21 +1,18 @@
 import React, { useState } from "react";
 import "./components/styleComponents/style.css";
-import FromComponent from "./components/hooks/FromComponent";
-import CountComponent from "./components/hooks/CountComponent";
-import UseEffect from "./components/hooks/UseEffect";
-import UseEffectInterval from "./components/hooks/UseEffectInterval";
-import UseEffectFeedJson from "./components/hooks/UseEffectFeedJson";
-import UseContext from "./components/hooks/UseContext";
-import UseMemo from "./components/hooks/UseMemo";
-import UseCallBack from "./components/hooks/UseCallBack";
+import Child1 from "./components/redux/Child1";
+import Child2 from "./components/redux/Child2";
+import Child3 from "./components/redux/Child3";
 
 export default () => {
+  const [count, setCount] = useState(0)
   return (
     <div>
       <div className="container">
-        {/* <UseContext /> */}
-        {/* <UseMemo /> */}
-        <UseCallBack />
+        <h1 onClick={() => setCount(prev => prev + 1)}>Redux hooks: {count}</h1>
+        <Child1 />
+        <Child2 />
+        <Child3 />
       </div>
     </div>
   );
