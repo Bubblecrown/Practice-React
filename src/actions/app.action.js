@@ -1,4 +1,4 @@
-import { APP_ACTION_ADD, APP_ACTION_REM } from "../Constants";
+import { APP_ACTION_ADD, APP_ACTION_REM, APP_ACTION_CLR } from "../Constants";
 // action ที่จะส่งข้อมูลไปให้ reducer
 // rxac
 export const setStateToAdd = () => ({
@@ -10,7 +10,7 @@ export const setStateToRem = () => ({
 });
 
 export const setStateToClr = (payload) => ({
-  type: second,
+  type: APP_ACTION_CLR,
   payload,
 });
 

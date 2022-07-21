@@ -1,7 +1,6 @@
 .container {
   margin: 5% 10%;
   box-sizing: border-box;
-	text-align: center;
 }
 
 img {
@@ -16,7 +15,8 @@ table {
   width: 100%;
 }
 
-td, th {
+td,
+th {
   border: 1px solid #dddddd;
   text-align: left;
   padding: 8px;
