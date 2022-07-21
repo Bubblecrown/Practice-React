@@ -1,5 +1,5 @@
 import { APP_ACTION_ADD, APP_ACTION_REM } from "../Constants";
-
+// action ที่จะส่งข้อมูลไปให้ reducer
 // rxac
 export const setStateToAdd = () => ({
   type: APP_ACTION_ADD,
