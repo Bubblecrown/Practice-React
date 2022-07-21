@@ -9,7 +9,7 @@ import { Provider } from "react-redux";
 import { legacy_createStore as createStore, applyMiddleware } from "redux";
 import logger from "redux-logger";
 import thunk from "redux-thunk";
-import reducers from "./reducers";
+import reducers from "./reducers/index";
 // redux end
 
 // 1. store -- global variable บรรจุ reducer
