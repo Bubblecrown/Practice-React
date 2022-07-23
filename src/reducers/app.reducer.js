@@ -1,5 +1,4 @@
 // rxreducer
-// redeucer มีได้มากกว่า 1 ตัวจึงต้องมีการ provide combineReducers ที่ใช่ในการ combine ทุกๆ reducer หรือทุกๆ subState ของทุกๆ component
 
 import { APP_ACTION_ADD, APP_ACTION_REM, APP_ACTION_CLR } from "../Constants";
 
